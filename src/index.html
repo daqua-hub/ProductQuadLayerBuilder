@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Quad Layer Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Product Quad Layer Builder</h1>
+    
+    <div class="container">
+        <header class="controls-header">
+            <div class="controls">
+                <div class="version-toggle">
+                    <label for="version-switch">全ての項目を表示：</label>
+                    <input type="checkbox" id="version-switch" class="toggle-switch">
+                </div>
+                <div class="save-section">
+                    <input type="text" id="filename-input" placeholder="ファイル名（省略可）" class="filename-input">
+                    <button id="load-btn" class="load-btn">Load</button>
+                    <button id="save-btn" class="save-btn">Save</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="layers-container">
+            <div class="layer-section" id="core-section">
+                <h2 class="layer-title">Core</h2>
+                <div class="layer-content" id="core-content">
+                    <!-- Core内容はJavaScriptで動的生成 -->
+                </div>
+            </div>
+            
+            <div class="layer-section" id="why-section">
+                <h2 class="layer-title">Why</h2>
+                <div class="layer-content" id="why-content">
+                    <!-- Why内容はJavaScriptで動的生成 -->
+                </div>
+            </div>
+            
+            <div class="layer-section" id="what-section">
+                <h2 class="layer-title">What</h2>
+                <div class="layer-content" id="what-content">
+                    <!-- What内容はJavaScriptで動的生成 -->
+                </div>
+            </div>
+            
+            <div class="layer-section" id="how-section">
+                <h2 class="layer-title">How</h2>
+                <div class="layer-content" id="how-content">
+                    <!-- How内容はJavaScriptで動的生成 -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">© 2025 Daisei TAKENAKA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- トースト通知 -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
